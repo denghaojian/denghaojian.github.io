@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haojian Deng 邓昊键 · Urban Climate &amp; GeoAI</title>
+<meta name="description" content="邓昊键个人学术主页：城市热环境、遥感与地理信息工程、城市韧性与活力">
+<style>
+:root{
+  --bg:#f7f7f5; --panel:#ffffff; --ink:#1a1a1a; --muted:#666;
+  --accent:#1a5fb4; --accent-soft:#e8f0fa; --line:#e5e2dc; --serif:"Georgia","Songti SC","SimSun",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.7;font-size:15.5px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:300px 1fr;gap:48px;padding:40px 32px}
+
+/* ===== Sidebar ===== */
+.sidebar{position:sticky;top:40px;align-self:start}
+.avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 4px 18px rgba(0,0,0,.10);display:block}
+.avatar-placeholder{width:180px;height:180px;border-radius:50%;background:linear-gradient(135deg,#dfe9f5,#c8d9ee);display:flex;align-items:center;justify-content:center;font-size:56px;color:#5b7fa6;border:4px solid #fff;box-shadow:0 4px 18px rgba(0,0,0,.10)}
+.sidebar h1{font-size:24px;margin-top:18px;font-family:var(--serif)}
+.sidebar .zh{font-size:16px;color:var(--muted);font-weight:normal}
+.tagline{font-size:14px;color:var(--muted);margin:10px 0 16px}
+.affil{font-size:14px;margin-bottom:4px}
+.affil span{color:var(--muted)}
+.links{list-style:none;margin-top:14px;font-size:14px}
+.links li{margin:7px 0}
+.links .ico{display:inline-block;width:20px}
+
+/* ===== Main ===== */
+.hero{padding:26px 0 34px;border-bottom:1px solid var(--line)}
+.kws{font-size:13px;letter-spacing:2.5px;color:var(--accent);font-weight:600}
+.hero h2{font-family:var(--serif);font-size:34px;line-height:1.25;margin:14px 0 12px}
+.hero p{max-width:640px;color:#333}
+.btns{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:9px 20px;border-radius:6px;font-size:14px;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover{background:#154a8f;text-decoration:none}
+.btn.ghost:hover{background:var(--accent-soft);text-decoration:none}
+
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}
+.sec-num{font-family:var(--serif);color:var(--accent);font-size:15px;font-weight:700}
+.sec-head h3{font-family:var(--serif);font-size:24px}
+.sec-head .sub{color:var(--muted);font-size:14px}
+
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.card .n{font-family:var(--serif);color:var(--accent);font-size:13px}
+.card h4{font-size:16px;margin:4px 0 6px}
+.card p{font-size:13.5px;color:var(--muted)}
+
+.pub{margin-bottom:18px;padding-left:8px;border-left:3px solid var(--accent-soft)}
+.pub .t{font-weight:600;font-size:14.5px}
+.pub .j{font-size:13.5px;color:var(--muted);font-style:italic}
+.pub .badge{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;border-radius:4px;padding:1px 8px;margin-left:6px;font-style:normal}
+.more{font-size:13.5px;color:var(--muted);margin-top:6px}
+
+.news li{margin:10px 0;list-style:none;display:flex;gap:14px}
+.news .d{font-family:var(--serif);color:var(--accent);font-size:13.5px;min-width:70px;flex-shrink:0}
+
+.honors li{margin:8px 0;list-style:none;padding-left:18px;position:relative;font-size:14.5px}
+.honors li::before{content:"▸";color:var(--accent);position:absolute;left:0}
+
+.contact-box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+footer{padding:26px 0 10px;font-size:13px;color:var(--muted);text-align:center}
+
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr;gap:24px}
+  .sidebar{position:static;text-align:center}
+  .avatar,.avatar-placeholder{margin:0 auto}
+  .cards{grid-template-columns:1fr}
+  .hero h2{font-size:26px}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <!-- ============ Sidebar ============ -->
+  <aside class="sidebar">
+    <!-- 替换为你的照片：将 photo.jpg 放入本目录后，把下面 placeholder 注释掉并启用 img -->
+    <div class="avatar-placeholder">邓</div>
+    <!-- <img class="avatar" src="photo.jpg" alt="Haojian Deng"> -->
+    <h1>Haojian Deng<br><span class="zh">邓昊键</span></h1>
+    <p class="tagline">Ph.D. in Resources &amp; Environment (Remote Sensing &amp; GIS Engineering)<br>城市热环境 · 遥感应用 · 城市韧性与活力</p>
+    <p class="affil">中山大学 地理科学与规划学院<br><span>School of Geography and Planning, Sun Yat-sen University</span></p>
+    <p class="affil"><span>Guangzhou, China</span></p>
+    <ul class="links">
+      <li><span class="ico">✉️</span> <a href="mailto:denghj9@mail2.sysu.edu.cn">denghj9@mail2.sysu.edu.cn</a></li>
+      <li><span class="ico">✉️</span> <a href="mailto:13143607431@163.com">13143607431@163.com</a></li>
+      <li><span class="ico">🎓</span> <a href="#" target="_blank">Google Scholar（待补充）</a></li>
+      <li><span class="ico">🆔</span> <a href="#" target="_blank">ORCID（待补充）</a></li>
+      <li><span class="ico">💻</span> <a href="#" target="_blank">GitHub（待补充）</a></li>
+    </ul>
+  </aside>
+
+  <!-- ============ Main ============ -->
+  <main>
+    <div class="hero">
+      <div class="kws">REMOTE SENSING · URBAN CLIMATE · GEOAI</div>
+      <h2>Understanding urban thermal environments through geospatial intelligence.</h2>
+      <p>我以卫星遥感、无人机与多源时空大数据为手段，研究城市热岛的时空演变机理、局地气候分区（LCZ）框架下的热环境响应，以及城市韧性与活力的量化评估，致力于为可持续城市提供数据驱动的科学依据。<br>
+      <em>I study surface urban heat islands, local climate zones, and urban resilience with multi-source geospatial big data — toward more sustainable and livable cities.</em></p>
+      <div class="btns">
+        <a class="btn primary" href="#publications">View Publications</a>
+        <a class="btn ghost" href="#news">News</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- 01 Research -->
+    <section id="research">
+      <div class="sec-head"><span class="sec-num">01</span><h3>What I study</h3><span class="sub">研究兴趣</span></div>
+      <div class="cards">
+        <div class="card"><div class="n">①</div><h4>城市热环境 Urban Climate</h4><p>地表城市热岛时空演变、水体冷岛效应调控、多情景热岛模拟与不确定性分析</p></div>
+        <div class="card"><div class="n">②</div><h4>遥感与地理信息 RS &amp; GIS</h4><p>卫星/无人机遥感应用、LCZ 局地气候分区、多源空间大数据时空挖掘</p></div>
+        <div class="card"><div class="n">③</div><h4>城市韧性与活力 Resilience &amp; Vitality</h4><p>城市韧性时空演变与空间溢出效应、城市活力与建成环境关系（MAUP）</p></div>
+        <div class="card"><div class="n">④</div><h4>城市群时空演化 Urban Agglomeration</h4><p>粤港澳大湾区、珠三角城市群扩张格局与空间结构识别、收缩城市研究</p></div>
+      </div>
+    </section>
+
+    <!-- 02 Publications -->
+    <section id="publications">
+      <div class="sec-head"><span class="sec-num">02</span><h3>Selected publications</h3><span class="sub">代表论文（第一作者 16 篇，节选）</span></div>
+
+      <div class="pub">
+        <div class="t">Urban Shrinkage and Surface Urban Heat Islands: Does Population Decline Lead to Cooling? A Spatiotemporal Analysis of China's 89 Shrinking Cities (2001–2019)</div>
+        <div class="j"><b>Deng H.</b>, Feng J.*, Liu K.*, et al. <b>Earth's Future</b>, 2026, 14(3).<span class="badge">SCI 一区 Top · IF 8.2</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">Regulation of Water Body Cooling Effects in Dense Urban Areas: Roles of Spatial Configuration, Spatial Size, and Built Environment</div>
+        <div class="j"><b>Deng H.</b>, Feng J., Chen X., et al. <b>Sustainable Cities and Society</b>, 2026: 107149.<span class="badge">SCI 一区 Top · IF 12.0</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">Integrating Model Variability, Spatial Scale, and Geographical Zoning to Analyze Uncertainties in Surface Urban Heat Island Prediction</div>
+        <div class="j"><b>Deng H.</b>, Feng J., Liu K.*, et al. <b>Sustainable Cities and Society</b>, 2025, 130: 106588.<span class="badge">SCI 一区 Top · IF 12.0</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">Local Climate Zone Framework: Seasonal Dynamics of Surface Urban Heat Island and Its Influencing Factors in Three Chinese Urban Agglomerations</div>
+        <div class="j"><b>Deng H.</b>, Feng J.*, Liu K.*, et al. <b>GIScience &amp; Remote Sensing</b>, 2025, 62(1): 2490317.<span class="badge">SCI 一区 Top · IF 6.9</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">Tackling the Modifiable Areal Unit Problem: Enhancing Urban Sustainability through Improved Land Surface Temperature and Its Influencing Factors Analysis</div>
+        <div class="j"><b>Deng H.</b>, Liu K.*, Feng J., et al. <b>Sustainable Cities and Society</b>, 2024, 114: 105747.<span class="badge">SCI 一区 Top · IF 12.0</span></div>
+      </div>
+      <div class="pub">
+        <div class="t">Understanding the Impact of Modifiable Areal Unit Problem on Urban Vitality and Its Built Environment Factors</div>
+        <div class="j"><b>Deng H.</b>, Liu K.*, Feng J. <b>Geo-Spatial Information Science</b>, 2024, 28(2): 1–17.<span class="badge">SCI 一区 · IF 5.5</span></div>
+      </div>
+      <p class="more">另在 <i>Remote Sensing</i>、<i>Land</i>、<i>Journal of Urban Planning and Development</i>、《地域研究与开发》《世界地理研究》等期刊发表论文，完整列表见简历（CV）。</p>
+    </section>
+
+    <!-- 03 News / Activity -->
+    <section id="news">
+      <div class="sec-head"><span class="sec-num">03</span><h3>Recent activity</h3><span class="sub">近期动态</span></div>
+      <ul class="news">
+        <li><span class="d">2026.06</span><span>获中山大学地理科学与规划学院<b>优秀博士学位论文</b></span></li>
+        <li><span class="d">2025</span><span>获<b>博士研究生国家奖学金</b>、中山大学<b>校长奖学金</b></span></li>
+        <li><span class="d">2025</span><span>中山大学 AI 赋能前沿交叉创新博士生论坛<b>口头报告二等奖</b></span></li>
+        <li><span class="d">2024</span><span>获中山大学地理科学与规划学院<b>“逸仙学术之星”</b>（全院仅评 1 人）</span></li>
+        <li><span class="d">2024</span><span>论文被 <i>Sustainable Cities and Society</i>、<i>Geo-Spatial Information Science</i> 接收发表</span></li>
+      </ul>
+    </section>
+
+    <!-- 04 Recognition -->
+    <section id="honors">
+      <div class="sec-head"><span class="sec-num">04</span><h3>Recognition</h3><span class="sub">荣誉与奖项</span></div>
+      <ul class="honors">
+        <li>研究生国家奖学金 ×3（博士 2024、2025；硕士 2021）</li>
+        <li>中山大学校长奖学金（2025）、张文海院士奖学金（2021）</li>
+        <li>Supermap 杯高校 GIS 大赛开发组二等奖、论文组二等奖（排名第 1）</li>
+        <li>易智瑞 GIS 软件开发大赛地理设计组三等奖 ×2（排名第 1）</li>
+        <li>软件著作权 2 项（空间插值分析系统 V1.0 第一完成人）</li>
+        <li>校三好研究生标兵 ×2、中山大学地理科学与规划学院优秀助教</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="sec-head"><span class="sec-num">05</span><h3>Get in touch</h3><span class="sub">联系方式</span></div>
+      <div class="contact-box">
+        <p>欢迎学术交流与合作！</p>
+        <p>📧 <a href="mailto:denghj9@mail2.sysu.edu.cn">denghj9@mail2.sysu.edu.cn</a><br>
+        📧 <a href="mailto:13143607431@163.com">13143607431@163.com</a><br>
+        📍 广东省广州市 · 中山大学地理科学与规划学院</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Haojian Deng 邓昊键 · Built with plain HTML · Inspired by AcademicPages
+    </footer>
+  </main>
+</div>
+</body>
+</html>
